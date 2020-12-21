@@ -17,7 +17,7 @@
 function_exists('ini_set') AND ini_set('display_errors', DEBUG ? '1' : '0');
 error_reporting(DEBUG ? E_ALL : 0);
 version_compare(PHP_VERSION, '5.3.0', '<') AND set_magic_quotes_runtime(0);
-$get_magic_quotes_gpc = @get_magic_quotes_gpc() ?? false;
+// $get_magic_quotes_gpc = @get_magic_quotes_gpc() ?? false;
 $starttime = microtime(1);
 $time = time();
 
@@ -109,7 +109,7 @@ $_SERVER['errno'] = $errno;
 $_SERVER['errstr'] = $errstr;
 $_SERVER['method'] = $method;
 $_SERVER['ajax'] = $ajax;
-$_SERVER['get_magic_quotes_gpc'] = $get_magic_quotes_gpc;
+// $_SERVER['get_magic_quotes_gpc'] = $get_magic_quotes_gpc;
 
 
 
